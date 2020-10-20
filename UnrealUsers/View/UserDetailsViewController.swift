@@ -39,6 +39,11 @@ class UserDetailsViewController: UITableViewController {
         if let user = data?.user {
             navigationItem.title = user.name
             nameTextField.text = user.name
+    
+            nameTextField.placeholder = ""
+            phoneTextField.placeholder = ""
+            emailTextField.placeholder = ""
+            
             imageView.image = UIImage(data: user.imageData!)
             imageView.layer.cornerRadius = 20
             emailTextField.text = user.email
