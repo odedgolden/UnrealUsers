@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		FC65FD24253ECCDC005E0670 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65FD23253ECCDC005E0670 /* AppDelegate.swift */; };
-		FC65FD28253ECCDC005E0670 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65FD27253ECCDC005E0670 /* ViewController.swift */; };
 		FC65FD2B253ECCDC005E0670 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC65FD29253ECCDC005E0670 /* Main.storyboard */; };
 		FC65FD2E253ECCDC005E0670 /* UnrealUsers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC65FD2C253ECCDC005E0670 /* UnrealUsers.xcdatamodeld */; };
 		FC65FD30253ECCE3005E0670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC65FD2F253ECCE3005E0670 /* Assets.xcassets */; };
 		FC65FD33253ECCE3005E0670 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC65FD31253ECCE3005E0670 /* LaunchScreen.storyboard */; };
 		FC65FD3E253ECCE4005E0670 /* UnrealUsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65FD3D253ECCE4005E0670 /* UnrealUsersTests.swift */; };
 		FC65FD49253ECCE4005E0670 /* UnrealUsersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65FD48253ECCE4005E0670 /* UnrealUsersUITests.swift */; };
+		FC65FD65253ECF19005E0670 /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65FD64253ECF19005E0670 /* UserTableViewController.swift */; };
+		FC65FD6A253ED231005E0670 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65FD69253ED231005E0670 /* UserTableViewCell.swift */; };
+		FC65FD6F253EF2C5005E0670 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65FD6E253EF2C5005E0670 /* UserDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,6 @@
 /* Begin PBXFileReference section */
 		FC65FD20253ECCDC005E0670 /* UnrealUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnrealUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC65FD23253ECCDC005E0670 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC65FD27253ECCDC005E0670 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC65FD2A253ECCDC005E0670 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC65FD2D253ECCDC005E0670 /* UnrealUsers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UnrealUsers.xcdatamodel; sourceTree = "<group>"; };
 		FC65FD2F253ECCE3005E0670 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,10 +46,13 @@
 		FC65FD34253ECCE3005E0670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC65FD39253ECCE4005E0670 /* UnrealUsersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnrealUsersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC65FD3D253ECCE4005E0670 /* UnrealUsersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnrealUsersTests.swift; sourceTree = "<group>"; };
-		FC65FD3F253ECCE4005E0670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC65FD3F253ECCE4005E0670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = UnrealUsersTests/Info.plist; sourceTree = SOURCE_ROOT; };
 		FC65FD44253ECCE4005E0670 /* UnrealUsersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnrealUsersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC65FD48253ECCE4005E0670 /* UnrealUsersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnrealUsersUITests.swift; sourceTree = "<group>"; };
 		FC65FD4A253ECCE4005E0670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC65FD64253ECF19005E0670 /* UserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
+		FC65FD69253ED231005E0670 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		FC65FD6E253EF2C5005E0670 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				FC65FD22253ECCDC005E0670 /* UnrealUsers */,
+				FC65FD2F253ECCE3005E0670 /* Assets.xcassets */,
 				FC65FD3C253ECCE4005E0670 /* UnrealUsersTests */,
 				FC65FD47253ECCE4005E0670 /* UnrealUsersUITests */,
 				FC65FD21253ECCDC005E0670 /* Products */,
@@ -99,13 +104,10 @@
 		FC65FD22253ECCDC005E0670 /* UnrealUsers */ = {
 			isa = PBXGroup;
 			children = (
-				FC65FD23253ECCDC005E0670 /* AppDelegate.swift */,
-				FC65FD27253ECCDC005E0670 /* ViewController.swift */,
-				FC65FD29253ECCDC005E0670 /* Main.storyboard */,
-				FC65FD2F253ECCE3005E0670 /* Assets.xcassets */,
-				FC65FD31253ECCE3005E0670 /* LaunchScreen.storyboard */,
 				FC65FD34253ECCE3005E0670 /* Info.plist */,
-				FC65FD2C253ECCDC005E0670 /* UnrealUsers.xcdatamodeld */,
+				FC65FD23253ECCDC005E0670 /* AppDelegate.swift */,
+				FC65FD5C253ECD79005E0670 /* View */,
+				FC65FD5D253ECDB5005E0670 /* Model */,
 			);
 			path = UnrealUsers;
 			sourceTree = "<group>";
@@ -126,6 +128,26 @@
 				FC65FD4A253ECCE4005E0670 /* Info.plist */,
 			);
 			path = UnrealUsersUITests;
+			sourceTree = "<group>";
+		};
+		FC65FD5C253ECD79005E0670 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC65FD31253ECCE3005E0670 /* LaunchScreen.storyboard */,
+				FC65FD29253ECCDC005E0670 /* Main.storyboard */,
+				FC65FD64253ECF19005E0670 /* UserTableViewController.swift */,
+				FC65FD69253ED231005E0670 /* UserTableViewCell.swift */,
+				FC65FD6E253EF2C5005E0670 /* UserDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC65FD5D253ECDB5005E0670 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC65FD2C253ECCDC005E0670 /* UnrealUsers.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,10 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC65FD28253ECCDC005E0670 /* ViewController.swift in Sources */,
+				FC65FD6F253EF2C5005E0670 /* UserDetailsViewController.swift in Sources */,
+				FC65FD6A253ED231005E0670 /* UserTableViewCell.swift in Sources */,
 				FC65FD2E253ECCDC005E0670 /* UnrealUsers.xcdatamodeld in Sources */,
+				FC65FD65253ECF19005E0670 /* UserTableViewController.swift in Sources */,
 				FC65FD24253ECCDC005E0670 /* AppDelegate.swift in Sources */,
-				FC65FD26253ECCDC005E0670 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
