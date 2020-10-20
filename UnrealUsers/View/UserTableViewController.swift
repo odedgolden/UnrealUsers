@@ -14,7 +14,7 @@ class UserTableViewController: UITableViewController, NSFetchedResultsController
         return (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     }()
     
-    private lazy var fetchResultsController: NSFetchedResultsController<User> = {
+    private lazy var fetchedResultsController: NSFetchedResultsController<User> = {
         let fetchRequest: NSFetchRequest<User> = User.fetchRequest()
         fetchRequest.fetchLimit = 50
         let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
@@ -38,7 +38,7 @@ class UserTableViewController: UITableViewController, NSFetchedResultsController
         navigationItem.rightBarButtonItems = [addBarButtonItem, deleteBarButtonItem]
         
         do {
-            try fetchResultsController.performFetch()
+            try fetchedResultsController.performFetch()
         } catch {
             fatalError("Core Data fetch error.")
         }
@@ -54,17 +54,17 @@ class UserTableViewController: UITableViewController, NSFetchedResultsController
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return fetchResultsController.sections?.count ?? 0
+        return fetchedResultsController.sections?.count ?? 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let sectionInfo = fetchResultsController.sections?[section] else { return 0 }
+        guard let sectionInfo = fetchedResultsController.sections?[section] else { return 0 }
         return sectionInfo.numberOfObjects
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath) as! UserTableViewCell
-        let user = fetchResultsController.object(at: indexPath)
+        let user = fetchedResultsController.object(at: indexPath)
         let userImage: UIImage?
         if let imageData = user.imageData {
             userImage = UIImage(data: imageData)
@@ -82,7 +82,7 @@ class UserTableViewController: UITableViewController, NSFetchedResultsController
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         switch editingStyle {
         case .delete:
-            let user = fetchResultsController.object(at: indexPath)
+            let user = fetchedResultsController.object(at: indexPath)
             context.delete(user)
             try? context.save()
         case .insert, .none:
@@ -125,8 +125,14 @@ class UserTableViewController: UITableViewController, NSFetchedResultsController
     // Navigation
     
     @IBSegueAction func showDetails(_ coder: NSCoder) -> UserDetailsViewController? {
+        var user: User?
+        if let indexPath = tableView.indexPathForSelectedRow{
+            user = fetchedResultsController.object(at: indexPath)
+        } else {
+            user = nil
+        }
         let userDetailsViewController = UserDetailsViewController(coder: coder)
-        //        userDetailsViewController?.inject(data:)
+        userDetailsViewController?.inject(data: .init(context: context, user: user))
         return userDetailsViewController
     }
     
@@ -134,7 +140,8 @@ class UserTableViewController: UITableViewController, NSFetchedResultsController
     
     @IBSegueAction func showNewUser(_ coder: NSCoder) -> UserDetailsViewController? {
         let userDetailsViewController = UserDetailsViewController(coder: coder)
-        //        userDetailsViewController?.inject(data:)
+        userDetailsViewController?.inject(data: .init(context: context, user: nil))
         return userDetailsViewController
+
     }
 }

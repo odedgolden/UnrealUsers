@@ -22,6 +22,10 @@ class UserDetailsViewController: UITableViewController {
     
     private var data: ViewData?
         
+    func inject(data: ViewData) {
+        self.data = data
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,6 +37,7 @@ class UserDetailsViewController: UITableViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveUser))
         
         if let user = data?.user {
+            navigationItem.title = user.name
             nameTextField.text = user.name
             imageView.image = UIImage(data: user.imageData!)
             imageView.layer.cornerRadius = 20
