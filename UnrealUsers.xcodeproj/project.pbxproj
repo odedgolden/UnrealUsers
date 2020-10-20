@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC65FD24253ECCDC005E0670 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65FD23253ECCDC005E0670 /* AppDelegate.swift */; };
+		FC65FD26253ECCDC005E0670 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65FD25253ECCDC005E0670 /* SceneDelegate.swift */; };
+		FC65FD28253ECCDC005E0670 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65FD27253ECCDC005E0670 /* ViewController.swift */; };
+		FC65FD2B253ECCDC005E0670 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC65FD29253ECCDC005E0670 /* Main.storyboard */; };
+		FC65FD2E253ECCDC005E0670 /* UnrealUsers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC65FD2C253ECCDC005E0670 /* UnrealUsers.xcdatamodeld */; };
+		FC65FD30253ECCE3005E0670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC65FD2F253ECCE3005E0670 /* Assets.xcassets */; };
+		FC65FD33253ECCE3005E0670 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC65FD31253ECCE3005E0670 /* LaunchScreen.storyboard */; };
+		FC65FD3E253ECCE4005E0670 /* UnrealUsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65FD3D253ECCE4005E0670 /* UnrealUsersTests.swift */; };
+		FC65FD49253ECCE4005E0670 /* UnrealUsersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65FD48253ECCE4005E0670 /* UnrealUsersUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC65FD3A253ECCE4005E0670 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC65FD18253ECCDC005E0670 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC65FD1F253ECCDC005E0670;
+			remoteInfo = UnrealUsers;
+		};
+		FC65FD45253ECCE4005E0670 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC65FD18253ECCDC005E0670 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC65FD1F253ECCDC005E0670;
+			remoteInfo = UnrealUsers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC65FD20253ECCDC005E0670 /* UnrealUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnrealUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC65FD23253ECCDC005E0670 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC65FD25253ECCDC005E0670 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FC65FD27253ECCDC005E0670 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC65FD2A253ECCDC005E0670 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC65FD2D253ECCDC005E0670 /* UnrealUsers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UnrealUsers.xcdatamodel; sourceTree = "<group>"; };
+		FC65FD2F253ECCE3005E0670 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC65FD32253ECCE3005E0670 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC65FD34253ECCE3005E0670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC65FD39253ECCE4005E0670 /* UnrealUsersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnrealUsersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC65FD3D253ECCE4005E0670 /* UnrealUsersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnrealUsersTests.swift; sourceTree = "<group>"; };
+		FC65FD3F253ECCE4005E0670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC65FD44253ECCE4005E0670 /* UnrealUsersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnrealUsersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC65FD48253ECCE4005E0670 /* UnrealUsersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnrealUsersUITests.swift; sourceTree = "<group>"; };
+		FC65FD4A253ECCE4005E0670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC65FD1D253ECCDC005E0670 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC65FD36253ECCE4005E0670 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC65FD41253ECCE4005E0670 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC65FD17253ECCDC005E0670 = {
+			isa = PBXGroup;
+			children = (
+				FC65FD22253ECCDC005E0670 /* UnrealUsers */,
+				FC65FD3C253ECCE4005E0670 /* UnrealUsersTests */,
+				FC65FD47253ECCE4005E0670 /* UnrealUsersUITests */,
+				FC65FD21253ECCDC005E0670 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC65FD21253ECCDC005E0670 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC65FD20253ECCDC005E0670 /* UnrealUsers.app */,
+				FC65FD39253ECCE4005E0670 /* UnrealUsersTests.xctest */,
+				FC65FD44253ECCE4005E0670 /* UnrealUsersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC65FD22253ECCDC005E0670 /* UnrealUsers */ = {
+			isa = PBXGroup;
+			children = (
+				FC65FD23253ECCDC005E0670 /* AppDelegate.swift */,
+				FC65FD25253ECCDC005E0670 /* SceneDelegate.swift */,
+				FC65FD27253ECCDC005E0670 /* ViewController.swift */,
+				FC65FD29253ECCDC005E0670 /* Main.storyboard */,
+				FC65FD2F253ECCE3005E0670 /* Assets.xcassets */,
+				FC65FD31253ECCE3005E0670 /* LaunchScreen.storyboard */,
+				FC65FD34253ECCE3005E0670 /* Info.plist */,
+				FC65FD2C253ECCDC005E0670 /* UnrealUsers.xcdatamodeld */,
+			);
+			path = UnrealUsers;
+			sourceTree = "<group>";
+		};
+		FC65FD3C253ECCE4005E0670 /* UnrealUsersTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC65FD3D253ECCE4005E0670 /* UnrealUsersTests.swift */,
+				FC65FD3F253ECCE4005E0670 /* Info.plist */,
+			);
+			path = UnrealUsersTests;
+			sourceTree = "<group>";
+		};
+		FC65FD47253ECCE4005E0670 /* UnrealUsersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC65FD48253ECCE4005E0670 /* UnrealUsersUITests.swift */,
+				FC65FD4A253ECCE4005E0670 /* Info.plist */,
+			);
+			path = UnrealUsersUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC65FD1F253ECCDC005E0670 /* UnrealUsers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC65FD4D253ECCE4005E0670 /* Build configuration list for PBXNativeTarget "UnrealUsers" */;
+			buildPhases = (
+				FC65FD1C253ECCDC005E0670 /* Sources */,
+				FC65FD1D253ECCDC005E0670 /* Frameworks */,
+				FC65FD1E253ECCDC005E0670 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnrealUsers;
+			productName = UnrealUsers;
+			productReference = FC65FD20253ECCDC005E0670 /* UnrealUsers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC65FD38253ECCE4005E0670 /* UnrealUsersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC65FD50253ECCE4005E0670 /* Build configuration list for PBXNativeTarget "UnrealUsersTests" */;
+			buildPhases = (
+				FC65FD35253ECCE4005E0670 /* Sources */,
+				FC65FD36253ECCE4005E0670 /* Frameworks */,
+				FC65FD37253ECCE4005E0670 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC65FD3B253ECCE4005E0670 /* PBXTargetDependency */,
+			);
+			name = UnrealUsersTests;
+			productName = UnrealUsersTests;
+			productReference = FC65FD39253ECCE4005E0670 /* UnrealUsersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC65FD43253ECCE4005E0670 /* UnrealUsersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC65FD53253ECCE4005E0670 /* Build configuration list for PBXNativeTarget "UnrealUsersUITests" */;
+			buildPhases = (
+				FC65FD40253ECCE4005E0670 /* Sources */,
+				FC65FD41253ECCE4005E0670 /* Frameworks */,
+				FC65FD42253ECCE4005E0670 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC65FD46253ECCE4005E0670 /* PBXTargetDependency */,
+			);
+			name = UnrealUsersUITests;
+			productName = UnrealUsersUITests;
+			productReference = FC65FD44253ECCE4005E0670 /* UnrealUsersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC65FD18253ECCDC005E0670 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					FC65FD1F253ECCDC005E0670 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					FC65FD38253ECCE4005E0670 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = FC65FD1F253ECCDC005E0670;
+					};
+					FC65FD43253ECCE4005E0670 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = FC65FD1F253ECCDC005E0670;
+					};
+				};
+			};
+			buildConfigurationList = FC65FD1B253ECCDC005E0670 /* Build configuration list for PBXProject "UnrealUsers" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC65FD17253ECCDC005E0670;
+			productRefGroup = FC65FD21253ECCDC005E0670 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC65FD1F253ECCDC005E0670 /* UnrealUsers */,
+				FC65FD38253ECCE4005E0670 /* UnrealUsersTests */,
+				FC65FD43253ECCE4005E0670 /* UnrealUsersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC65FD1E253ECCDC005E0670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC65FD33253ECCE3005E0670 /* LaunchScreen.storyboard in Resources */,
+				FC65FD30253ECCE3005E0670 /* Assets.xcassets in Resources */,
+				FC65FD2B253ECCDC005E0670 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC65FD37253ECCE4005E0670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC65FD42253ECCE4005E0670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC65FD1C253ECCDC005E0670 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC65FD28253ECCDC005E0670 /* ViewController.swift in Sources */,
+				FC65FD2E253ECCDC005E0670 /* UnrealUsers.xcdatamodeld in Sources */,
+				FC65FD24253ECCDC005E0670 /* AppDelegate.swift in Sources */,
+				FC65FD26253ECCDC005E0670 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC65FD35253ECCE4005E0670 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC65FD3E253ECCE4005E0670 /* UnrealUsersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC65FD40253ECCE4005E0670 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC65FD49253ECCE4005E0670 /* UnrealUsersUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC65FD3B253ECCE4005E0670 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC65FD1F253ECCDC005E0670 /* UnrealUsers */;
+			targetProxy = FC65FD3A253ECCE4005E0670 /* PBXContainerItemProxy */;
+		};
+		FC65FD46253ECCE4005E0670 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC65FD1F253ECCDC005E0670 /* UnrealUsers */;
+			targetProxy = FC65FD45253ECCE4005E0670 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC65FD29253ECCDC005E0670 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC65FD2A253ECCDC005E0670 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC65FD31253ECCE3005E0670 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC65FD32253ECCE3005E0670 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC65FD4B253ECCE4005E0670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC65FD4C253ECCE4005E0670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC65FD4E253ECCE4005E0670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2AJNJKX5V;
+				INFOPLIST_FILE = UnrealUsers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OG.UnrealUsers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC65FD4F253ECCE4005E0670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2AJNJKX5V;
+				INFOPLIST_FILE = UnrealUsers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OG.UnrealUsers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC65FD51253ECCE4005E0670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2AJNJKX5V;
+				INFOPLIST_FILE = UnrealUsersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OG.UnrealUsersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnrealUsers.app/UnrealUsers";
+			};
+			name = Debug;
+		};
+		FC65FD52253ECCE4005E0670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2AJNJKX5V;
+				INFOPLIST_FILE = UnrealUsersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OG.UnrealUsersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnrealUsers.app/UnrealUsers";
+			};
+			name = Release;
+		};
+		FC65FD54253ECCE4005E0670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2AJNJKX5V;
+				INFOPLIST_FILE = UnrealUsersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OG.UnrealUsersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UnrealUsers;
+			};
+			name = Debug;
+		};
+		FC65FD55253ECCE4005E0670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2AJNJKX5V;
+				INFOPLIST_FILE = UnrealUsersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OG.UnrealUsersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UnrealUsers;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC65FD1B253ECCDC005E0670 /* Build configuration list for PBXProject "UnrealUsers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC65FD4B253ECCE4005E0670 /* Debug */,
+				FC65FD4C253ECCE4005E0670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC65FD4D253ECCE4005E0670 /* Build configuration list for PBXNativeTarget "UnrealUsers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC65FD4E253ECCE4005E0670 /* Debug */,
+				FC65FD4F253ECCE4005E0670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC65FD50253ECCE4005E0670 /* Build configuration list for PBXNativeTarget "UnrealUsersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC65FD51253ECCE4005E0670 /* Debug */,
+				FC65FD52253ECCE4005E0670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC65FD53253ECCE4005E0670 /* Build configuration list for PBXNativeTarget "UnrealUsersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC65FD54253ECCE4005E0670 /* Debug */,
+				FC65FD55253ECCE4005E0670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FC65FD2C253ECCDC005E0670 /* UnrealUsers.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC65FD2D253ECCDC005E0670 /* UnrealUsers.xcdatamodel */,
+			);
+			currentVersion = FC65FD2D253ECCDC005E0670 /* UnrealUsers.xcdatamodel */;
+			path = UnrealUsers.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FC65FD18253ECCDC005E0670 /* Project object */;
+}
