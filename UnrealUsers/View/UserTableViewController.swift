@@ -44,6 +44,16 @@ class UserTableViewController: UITableViewController, NSFetchedResultsController
         }
     }
     
+    @IBAction func deleteSelectedUsers(_ sender: UIBarButtonItem) {
+        if let indexPaths = tableView.indexPathsForSelectedRows {
+            indexPaths.forEach {
+                let user = fetchedResultsController.object(at: $0)
+                context.delete(user)
+            }
+            try? context.save()
+        }
+    }
+    
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         addBarButtonItem.isEnabled = !editing
@@ -122,7 +132,7 @@ class UserTableViewController: UITableViewController, NSFetchedResultsController
         tableView.endUpdates()
     }
     
-    // Navigation
+    // MARK: Navigation
     
     @IBSegueAction func showDetails(_ coder: NSCoder) -> UserDetailsViewController? {
         var user: User?
@@ -144,4 +154,13 @@ class UserTableViewController: UITableViewController, NSFetchedResultsController
         return userDetailsViewController
 
     }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "showDetails" {
+            return !tableView.isEditing
+        } else {
+            return true
+        }
+    }
+    
 }

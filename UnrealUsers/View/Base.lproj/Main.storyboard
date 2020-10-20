@@ -35,7 +35,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQJ-32-2Y2">
                                                     <rect key="frame" x="132" y="20" width="262" height="80.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -62,7 +62,7 @@
                                 <connections>
                                     <outlet property="userImageView" destination="Lq7-HE-9JM" id="YEX-u4-2sB"/>
                                     <outlet property="userNameLabel" destination="hQJ-32-2Y2" id="a5e-Zy-Xv6"/>
-                                    <segue destination="N5C-wy-uUA" kind="show" destinationCreationSelector="showDetails:" id="ECR-ls-jeD"/>
+                                    <segue destination="N5C-wy-uUA" kind="show" identifier="showDetails" destinationCreationSelector="showDetails:" id="ECR-ls-jeD"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -78,7 +78,11 @@
                                     <segue destination="N5C-wy-uUA" kind="show" identifier="showNewUser" destinationCreationSelector="showNewUser:" id="pVl-sq-sa6"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem systemItem="trash" id="ScA-bG-V64"/>
+                            <barButtonItem systemItem="trash" id="ScA-bG-V64">
+                                <connections>
+                                    <action selector="deleteSelectedUsers:" destination="8At-Hl-5hh" id="hqY-gP-ZF9"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
