@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FC65FD24253ECCDC005E0670 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65FD23253ECCDC005E0670 /* AppDelegate.swift */; };
-		FC65FD26253ECCDC005E0670 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65FD25253ECCDC005E0670 /* SceneDelegate.swift */; };
 		FC65FD28253ECCDC005E0670 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65FD27253ECCDC005E0670 /* ViewController.swift */; };
 		FC65FD2B253ECCDC005E0670 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC65FD29253ECCDC005E0670 /* Main.storyboard */; };
 		FC65FD2E253ECCDC005E0670 /* UnrealUsers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC65FD2C253ECCDC005E0670 /* UnrealUsers.xcdatamodeld */; };
@@ -38,7 +37,6 @@
 /* Begin PBXFileReference section */
 		FC65FD20253ECCDC005E0670 /* UnrealUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnrealUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC65FD23253ECCDC005E0670 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC65FD25253ECCDC005E0670 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FC65FD27253ECCDC005E0670 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC65FD2A253ECCDC005E0670 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC65FD2D253ECCDC005E0670 /* UnrealUsers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UnrealUsers.xcdatamodel; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				FC65FD23253ECCDC005E0670 /* AppDelegate.swift */,
-				FC65FD25253ECCDC005E0670 /* SceneDelegate.swift */,
 				FC65FD27253ECCDC005E0670 /* ViewController.swift */,
 				FC65FD29253ECCDC005E0670 /* Main.storyboard */,
 				FC65FD2F253ECCE3005E0670 /* Assets.xcassets */,
