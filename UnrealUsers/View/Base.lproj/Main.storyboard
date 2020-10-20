@@ -72,7 +72,20 @@
                             <outlet property="delegate" destination="8At-Hl-5hh" id="Wwx-dz-rvb"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="luh-OL-zbj"/>
+                    <navigationItem key="navigationItem" id="luh-OL-zbj">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="BpG-aa-Wzx">
+                                <connections>
+                                    <segue destination="Pij-CT-WJK" kind="show" identifier="showNewUser" destinationCreationSelector="showNewUser:" id="aso-L9-8iO"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="trash" id="ScA-bG-V64"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addBarButtonItem" destination="BpG-aa-Wzx" id="0sr-aN-rAH"/>
+                        <outlet property="deleteBarButtonItem" destination="ScA-bG-V64" id="T1V-yA-kgS"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QLy-bH-Iij" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,6 +126,9 @@
             <point key="canvasLocation" x="228.98550724637684" y="0.0"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="aso-L9-8iO"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

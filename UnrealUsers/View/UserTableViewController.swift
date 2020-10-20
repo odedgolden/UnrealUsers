@@ -23,9 +23,8 @@ class UserTableViewController: UITableViewController, NSFetchedResultsController
         frc.delegate = self
         return frc
     }()
-    
-    private let addBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showNewUser))
-    private let deleteBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(deleteSelectedUsers))
+    @IBOutlet var addBarButtonItem: UIBarButtonItem!
+    @IBOutlet var deleteBarButtonItem: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +32,8 @@ class UserTableViewController: UITableViewController, NSFetchedResultsController
         navigationItem.title = "Users"
         navigationItem.leftBarButtonItem = editButtonItem
         tableView.allowsMultipleSelectionDuringEditing = true
+      
+        
         deleteBarButtonItem.isEnabled = false
         navigationItem.rightBarButtonItems = [addBarButtonItem, deleteBarButtonItem]
         
@@ -43,20 +44,12 @@ class UserTableViewController: UITableViewController, NSFetchedResultsController
         }
     }
     
-    
-    @objc private func showNewUser() {
-        
-    }
-    
-    @objc private func deleteSelectedUsers() {
-        
-    }
-    
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         addBarButtonItem.isEnabled = !editing
         deleteBarButtonItem.isEnabled = editing
     }
+    
 
     // MARK: - Table view data source
 
@@ -137,4 +130,11 @@ class UserTableViewController: UITableViewController, NSFetchedResultsController
         return userDetailsViewController
     }
     
+
+    
+    @IBSegueAction func showNewUser(_ coder: NSCoder) -> UserDetailsViewController? {
+        let userDetailsViewController = UserDetailsViewController(coder: coder)
+        //        userDetailsViewController?.inject(data:)
+        return userDetailsViewController
+    }
 }
