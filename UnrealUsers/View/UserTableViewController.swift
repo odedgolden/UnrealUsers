@@ -24,18 +24,38 @@ class UserTableViewController: UITableViewController, NSFetchedResultsController
         return frc
     }()
     
+    private let addBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showNewUser))
+    private let deleteBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(deleteSelectedUsers))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.title = "Users"
         navigationItem.leftBarButtonItem = editButtonItem
         tableView.allowsMultipleSelectionDuringEditing = true
+        deleteBarButtonItem.isEnabled = false
+        navigationItem.rightBarButtonItems = [addBarButtonItem, deleteBarButtonItem]
         
         do {
             try fetchResultsController.performFetch()
         } catch {
             fatalError("Core Data fetch error.")
         }
+    }
+    
+    
+    @objc private func showNewUser() {
+        
+    }
+    
+    @objc private func deleteSelectedUsers() {
+        
+    }
+    
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        addBarButtonItem.isEnabled = !editing
+        deleteBarButtonItem.isEnabled = editing
     }
 
     // MARK: - Table view data source
@@ -111,9 +131,9 @@ class UserTableViewController: UITableViewController, NSFetchedResultsController
     
     // Navigation
     
-    @IBSegueAction private func showDetails(_ coder: NSCoder) -> UserDetailsViewController? {
+    @IBSegueAction func showDetails(_ coder: NSCoder) -> UserDetailsViewController? {
         let userDetailsViewController = UserDetailsViewController(coder: coder)
-//        userDetailsViewController?.inject(data:)
+        //        userDetailsViewController?.inject(data:)
         return userDetailsViewController
     }
     
